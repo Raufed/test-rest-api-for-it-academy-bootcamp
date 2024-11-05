@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:
+      it_academy_test_app
+  datasource:
+    url: ${URL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      generate-ddl: true
+      properties:
+        hibernate.format_sql: true
+        hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
